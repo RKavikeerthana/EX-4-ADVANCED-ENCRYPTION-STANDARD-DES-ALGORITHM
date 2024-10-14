@@ -1,4 +1,4 @@
-# EX-4-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+# EX-8-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
 
 ## Aim:
   To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
@@ -13,22 +13,17 @@
 ```
 #include <stdio.h>
 #include <string.h>
-
-
-  void xor_encrypt_decrypt(char *input, char *key) {
+void xor_encrypt_decrypt(char *input, char *key) {
 int input_len = strlen(input);
 int key_len = strlen(key);
-
 for (int i = 0; i < input_len; i++) {
-    input[i] = input[i] ^ key[i % key_len];
+input[i] = input[i] ^ key[i % key_len];
 }
 }
-
 int main() {
-    printf("\n\n\n\n      ***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n\n");
-    
-char url[] = "KAVIKEERTHANA";
-char key[] = "secretkey"; 
+char url[] = "https://lms2.cse.saveetha.in";
+char key[] = "secretkey";
+printf("\n***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n");
 
 printf("Original text: %s\n", url);
 
@@ -37,14 +32,14 @@ printf("Encrypted text: %s\n", url);
 
 xor_encrypt_decrypt(url, key);
 printf("Decrypted text: %s\n", url);
-
 return 0;
 }
 
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/0eb66fec-f485-4f31-b40d-079a10808fb1)
+![image](https://github.com/user-attachments/assets/80f7a3b6-25a6-435d-bce0-72f165966cc8)
+
 
 ## RESULT: 
 The program to implement Advanced Encryption Standard DES Algorithm is executed successfully.
